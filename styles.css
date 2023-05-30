@@ -1,8 +1,8 @@
-body{
+body {
     background-color: black;
-}
-
-.ojo1{
+  }
+  
+  .ojo1 {
     position: absolute;
     width: 300px;
     height: 150px;
@@ -10,9 +10,9 @@ body{
     border-radius: 50%;
     left: 25%;
     top: 25%;
-}
-
-.ojo2{
+  }
+  
+  .ojo2 {
     position: absolute;
     width: 300px;
     height: 150px;
@@ -20,9 +20,9 @@ body{
     border-radius: 50%;
     left: 55%;
     top: 25%;
-}
-
-.punto1{
+  }
+  
+  .punto1 {
     position: relative;
     width: 40px;
     height: 100px;
@@ -31,9 +31,9 @@ body{
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-}
-
-.punto2{
+  }
+  
+  .punto2 {
     position: relative;
     width: 40px;
     height: 100px;
@@ -42,4 +42,18 @@ body{
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-}
+  }
+  
+  .boca {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    border: 2px solid black;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
