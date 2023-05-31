@@ -16,8 +16,25 @@ document.onmousemove = (e) => {
 
   // Limitar el rango de movimiento de la boca
   let mouthMaxX = 60;
-  let mouthMinX = 40;
+  let mouthMinX = 45;
+  let mouseX = Math.min(Math.max(parseFloat(x), mouthMinX), mouthMaxX);
 
-  let mouthX = Math.min(Math.max(parseFloat(x), mouthMinX), mouthMaxX);
-  boca.style.left = mouthX + "%";
+  // Cambiar las propiedades de la boca según la posición del cursor
+  if (parseFloat(y) < 50) {
+    boca.style.borderBottomLeftRadius = "100px";
+    boca.style.borderBottomRightRadius = "100px";
+    boca.style.borderTopLeftRadius = "0px";
+    boca.style.borderTopRightRadius = "0px";
+
+  } else if (parseFloat(y) > 50) {
+
+    boca.style.borderBottomLeftRadius = "0px";
+    boca.style.borderBottomRightRadius = "0px";
+    boca.style.borderTopLeftRadius = "100px";
+    boca.style.borderTopRightRadius = "100px";
+
+  }
+
+  // Mover la boca
+  boca.style.left = mouseX + "%";
 };
